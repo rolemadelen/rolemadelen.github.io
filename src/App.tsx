@@ -102,13 +102,13 @@ const App: React.FC = () => {
               <nav className='nav text-sm border-b-[1px] border-[#ccc] lg:border-0 pb-20 lg:pb-10 text-gray-800'>
                 <ul className='nav-list mb-8'>
                   <li>
-                    <a className='nav-item' href='https://github.com/rolemadelen' target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a className='nav-item' href="https://github.com/rolemadelen" target="_blank" rel="noopener noreferrer">GitHub</a>
                   </li>
                   <li>
-                    <a className='nav-item' href='https://www.linkedin.com/in/jiieu/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a className='nav-item' href="https://www.linkedin.com/in/jiieu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                   </li>
                   <li>
-                    <a className='nav-item' href='https://www.bepersistent.dev/' target="_blank" rel="noopener noreferrer">Blog</a>
+                    <a className='nav-item' href="https://blog.jiieu.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                   </li>
                 </ul>
                 <div className='flex flex-col'>
