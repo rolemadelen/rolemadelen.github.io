@@ -22,7 +22,7 @@ const Languages: React.FC<Props> = ({ nameRef, roleRef }) => {
       roleRef.current.innerText = '프론트엔드 개발자'
     } else if (flag === '🇯🇵') {
       langRef.current.innerText = '語学力'
-      nameRef.current.innerText = '劉 ジー'
+      nameRef.current.innerText = '劉 智'
       roleRef.current.innerText = 'フロントエンド エンジニア'
     } else {
       langRef.current.innerText = 'Languages'

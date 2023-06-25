@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Klee-Medium";
+  src: local("Klee-Medium");
+  unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
+}
 * {
   overscroll-behavior: none;
   -ms-overflow-style: none;
@@ -8,7 +13,7 @@
 }
 
 :root {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif, "Klee-Medium";
   background-color: #f4ede2;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
