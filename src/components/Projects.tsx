@@ -24,11 +24,19 @@ const Projects: React.FC = () => {
           <Project
             imgsrc={'/src/assets/aikomicare.gif'}
             title={'Aikomiケア Website'}
-            skillsHighlight={['JavaScript', 'HTML', 'SCSS']}
-            skills={['Vite', 'PHP', 'AWS Lightsail']}
+            skillsHighlight={['JavaScript', 'HTML', 'SCSS', 'Responsive UI']}
+            skills={['Vite', 'PHP', 'MySQL', 'AWS Lightsail']}
             link={'https://aikomicare.com/'}>
             <div className='text-sm'>
-              A webiste designed to introduce users to Aikomi Care and step-by-step guidance throughout their entire service experience.
+              <div className='mb-2'>
+                A webiste designed to introduce users to Aikomi Care and step-by-step guidance throughout their entire service experience.
+              </div>
+              <div className='mb-2'>
+                Utilized PHP and MySQL to create a functional contact form.
+              </div>
+              <div>
+                Implemented automated cron jobs to execute a script, ensuring SSL certificate renewal.
+              </div>
             </div>
           </Project>
           <Project
@@ -44,8 +52,8 @@ const Projects: React.FC = () => {
           <Project
             imgsrc={'/src/assets/artlog.gif'}
             title={'Artlog'}
-            skillsHighlight={['React.js', 'Redux', 'TypeScript', 'SCSS', 'MongoDB', 'Axios']}
-            skills={['Node.js', 'Express.js']}
+            skillsHighlight={['React.js', 'Redux', 'TypeScript', 'SCSS']}
+            skills={['Node.js', 'Express.js', 'MongoDB', 'Axios']}
             link={'https://artlogs.netlify.app/'}>
             <div className='text-sm'>
               Created Artlog as a personal endeavor, curating a visual diary of my daily outfits as a hobby artist, fostering creativity and self-expression in the realm of minimalist fashion.

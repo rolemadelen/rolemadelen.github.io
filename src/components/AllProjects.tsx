@@ -86,9 +86,7 @@ const AllProjects: React.FC = () => {
             <tr>
               <td className='text-sm'>2023</td>
               <td className='text-sm'>
-                <a href="https://aikomicare.com/" target="_blank" rel="noopener noreferrer">
-                  Aikomiケア Website <span className='arrow'></span>
-                </a>
+                Aikomiケア Website
               </td>
               <td className='built-with hidden sm:block'>
                 <ul className='flex'>
