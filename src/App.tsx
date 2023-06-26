@@ -6,6 +6,7 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Languages from './components/Languages'
+import Div100Vh from 'react-div-100vh'
 
 const App: React.FC = () => {
   const madelenRef = useRef<HTMLDivElement | null>(null)
@@ -83,7 +84,7 @@ const App: React.FC = () => {
           <source src='/src/assets/madelen-video.mp4' type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
         </video>
 
-        <div className='madelen opacity-0 fixed left-0 bottom-0 bg-cover h-screen w-screen z-[-1] transition-opacity duration-1000 ease-in-out' ref={madelenRef}></div>
+        <Div100Vh className='madelen opacity-0 fixed left-0 bottom-0 bg-cover h-screen w-screen z-[-1] transition-opacity duration-1000 ease-in-out' ref={madelenRef}></Div100Vh>
 
         <div className='background w-0 rounded-sm h-screen max-w-screen-2xl m-auto fixed shadow-2xl z-[-1] transition-width duration-1000 ease-in-out overflow-hidden'>
           <div className='inner flex flex-col lg:flex-row h-screen overflow-scroll' ref={innerRef}>
