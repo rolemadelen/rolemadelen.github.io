@@ -85,9 +85,9 @@ const App: React.FC = () => {
 
         <div className='madelen opacity-0 fixed left-0 bottom-0 bg-cover h-screen w-screen z-[-1] transition-opacity duration-1000 ease-in-out' ref={madelenRef}></div>
 
-        <div className='background w-0 rounded-sm max-w-screen-2xl m-auto fixed shadow-2xl z-[-1] transition-width duration-1000 ease-in-out overflow-hidden'>
+        <div className='background w-0 rounded-sm h-screen max-w-screen-2xl m-auto fixed shadow-2xl z-[-1] transition-width duration-1000 ease-in-out overflow-hidden'>
           <div className='inner flex flex-col lg:flex-row h-screen overflow-scroll' ref={innerRef}>
-            <aside className='aside left main header mx-8 pt-4 lg:pt-8 lg:pb-20 flex flex-col justify-between'>
+            <aside className='aside left main header mx-8 pt-4 lg:pt-8 lg:pb-4 flex flex-col justify-between'>
               <header>
                 <h1 className='text-5xl font-light text-gray-800' ref={nameRef}>
                   Jii Eu
@@ -99,7 +99,7 @@ const App: React.FC = () => {
                   I'm a front-end developer currently residing in Kentucky — passionate about crafting creative and simple digital experiences.
                 </div>
               </header>
-              <nav className='nav text-sm border-b-[1px] border-[#ccc] lg:border-0 pb-20 lg:pb-10 text-gray-800'>
+              <nav className='nav text-sm border-b-[1px] border-[#ccc] lg:border-0 pb-8 text-gray-800'>
                 <ul className='nav-list mb-8'>
                   <li>
                     <a className='nav-item' href="https://github.com/rolemadelen" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -121,7 +121,7 @@ const App: React.FC = () => {
                 </div>
               </nav>
             </aside>
-            <div className='content lg:overflow-scroll h-auto pt-16 lg:py-8 mb-20' onScroll={handleOnScroll} ref={scrollRef}>
+            <div className='content lg:overflow-scroll h-auto pt-16 lg:py-8' onScroll={handleOnScroll} ref={scrollRef}>
               <Intro />
               <Experience />
               <Skills />
