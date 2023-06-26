@@ -115,8 +115,8 @@ const App: React.FC = () => {
                   <a href="/#/cv" className='cv nav-item'>
                     <span>૮</span> ･ ﻌ･<span>ა</span> CV
                   </a>
-                  <a className='nav-item' href="mailto:eu.jii@pm.me">
-                    eu.jii@pm.me
+                  <a className='nav-item' href="mailto:hello@jiieu.com">
+                    hello@jiieu.com
                   </a>
                 </div>
               </nav>

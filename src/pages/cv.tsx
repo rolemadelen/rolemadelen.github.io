@@ -27,7 +27,7 @@ const CV: React.FC = () => {
             <a href="https://github.com/rolemadelen">github.com/rolemadelen</a>
           </ContactLink>
           <div>
-            <a href="mailto:eu.jii@pm.me">eu.jii@pm.me</a>
+            <a href="mailto:hello@jiieu.com">hello@jiieu.com</a>
           </div>
           <div>+1 606.389.2964</div>
         </Contact>
