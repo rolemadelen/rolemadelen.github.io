@@ -1,63 +1,68 @@
-import './App.css'
-import { useCallback, useEffect, useRef } from 'react'
-import Skills from './components/Skills'
-import Intro from './components/Intro'
-import Experience from './components/Experience'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
-import Languages from './components/Languages'
-import Div100Vh from 'react-div-100vh'
+import "./App.css";
+import { useCallback, useEffect, useRef } from "react";
+import Skills from "./components/Skills";
+import Intro from "./components/Intro";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Languages from "./components/Languages";
+import Div100Vh from "react-div-100vh";
 
 const App: React.FC = () => {
-  const madelenRef = useRef<HTMLDivElement | null>(null)
-  const videoRef = useRef<HTMLVideoElement | null>(null)
-  const scrollRef = useRef<HTMLDivElement | null>(null)
-  const nameRef = useRef<HTMLHeadingElement | null>(null)
-  const roleRef = useRef<HTMLHeadingElement | null>(null)
-  const innerRef = useRef<HTMLDivElement | null>(null)
+  const madelenRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const nameRef = useRef<HTMLHeadingElement | null>(null);
+  const roleRef = useRef<HTMLHeadingElement | null>(null);
+  const innerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const bg = document.querySelector('.background') as HTMLDivElement
-    const splashName = document.querySelector('.splash-name') as HTMLHeadingElement
-    const splashPortfolio = document.querySelector('.splash-portfolio') as HTMLHeadingElement
+    const bg = document.querySelector(".background") as HTMLDivElement;
+    const splashName = document.querySelector(
+      ".splash-name"
+    ) as HTMLHeadingElement;
+    const splashPortfolio = document.querySelector(
+      ".splash-portfolio"
+    ) as HTMLHeadingElement;
 
     setTimeout(() => {
-      splashName.style.opacity = '1.0'
+      splashName.style.opacity = "1.0";
 
       setTimeout(() => {
-        splashPortfolio.style.opacity = '1.0'
-      }, 500)
-    }, 500)
+        splashPortfolio.style.opacity = "1.0";
+      }, 200);
+    }, 100);
 
     setTimeout(() => {
-      splashName.style.opacity = '0.0'
-      splashPortfolio.style.opacity = '0.0'
-      if (videoRef.current) videoRef.current.style.opacity = '1.0'
-      if (madelenRef.current) madelenRef.current.style.opacity = '1.0'
-      bg.style.width = "90%"
+      splashName.style.opacity = "0.0";
+      splashPortfolio.style.opacity = "0.0";
+      if (videoRef.current) videoRef.current.style.opacity = "1.0";
+      if (madelenRef.current) madelenRef.current.style.opacity = "1.0";
+      bg.style.width = "90%";
 
       setTimeout(() => {
-        splashName.style.display = 'none'
-        splashPortfolio.style.display = 'none'
-      }, 800)
-    }, 3000)
-
-  }, [])
+        splashName.style.display = "none";
+        splashPortfolio.style.display = "none";
+      }, 800);
+    }, 1500);
+  }, []);
 
   const handleOnScroll = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (videoRef && videoRef.current) {
-      videoRef && videoRef.current && videoRef.current?.pause()
-      scrollRef.current = e.currentTarget as HTMLDivElement
+      videoRef && videoRef.current && videoRef.current?.pause();
+      scrollRef.current = e.currentTarget as HTMLDivElement;
 
-      const rate = (scrollRef.current.scrollHeight - document.body.scrollHeight) / videoRef.current.duration
-      videoRef.current.currentTime = scrollRef.current.scrollTop / rate
+      const rate =
+        (scrollRef.current.scrollHeight - document.body.scrollHeight) /
+        videoRef.current.duration;
+      videoRef.current.currentTime = scrollRef.current.scrollTop / rate;
     }
-  }, [])
+  }, []);
 
   const handleOnWheel = useCallback((e: React.WheelEvent) => {
     if (scrollRef && scrollRef.current)
-      scrollRef.current.scrollTop += (e.deltaY / 2)
-  }, [])
+      scrollRef.current.scrollTop += e.deltaY / 2;
+  }, []);
 
   const handleOnClick = useCallback(() => {
     if (!scrollRef || !scrollRef.current) return;
@@ -65,64 +70,115 @@ const App: React.FC = () => {
 
     scrollRef.current.scrollTop = 0;
     innerRef.current.scrollTop = 0;
-  }, [])
+  }, []);
 
   const handleOnContextMenu = useCallback(() => {
-    return false
-  }, [])
+    return false;
+  }, []);
 
   return (
     <>
-      <div className='splash absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-3xl text-align text-center'>
-        <h1 className='splash-name opacity-0 transition-opacity duration-1000'>Jii Eu</h1>
-        <h2 className='splash-portfolio opacity-0 duration-1000 transition-opacity text-gray-600'>Portfolio</h2>
-      </div >
+      <div className="splash absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-3xl text-align text-center">
+        <h1 className="splash-name opacity-0 transition-opacity duration-1000">
+          Jii Eu
+        </h1>
+        <h2 className="splash-portfolio opacity-0 duration-1000 transition-opacity text-gray-600">
+          Portfolio
+        </h2>
+      </div>
 
-      <div className='relative' onWheel={handleOnWheel}>
-        <video onContextMenu={handleOnContextMenu} controls={false} muted={true} loop={false} autoPlay={false} ref={videoRef} className='opacity-0 z-[-1] fixed left-0 bottom-0 h-full transition-opacity duration-1000 ease-in-out'>
-          <source src='/src/assets/madelen-video.webm' type='video/webm; codecs="vp8.0, vorbis"' />
-          <source src='/src/assets/madelen-video.mp4' type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+      <div className="relative" onWheel={handleOnWheel}>
+        <video
+          onContextMenu={handleOnContextMenu}
+          controls={false}
+          muted={true}
+          loop={false}
+          autoPlay={false}
+          ref={videoRef}
+          className="opacity-0 z-[-1] fixed left-0 bottom-0 h-full transition-opacity duration-1000 ease-in-out"
+        >
+          <source
+            src="/src/assets/madelen-video.webm"
+            type='video/webm; codecs="vp8.0, vorbis"'
+          />
+          <source
+            src="/src/assets/madelen-video.mp4"
+            type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'
+          />
         </video>
 
-        <Div100Vh className='madelen opacity-0 fixed left-0 bottom-0 bg-cover h-screen w-screen z-[-1] transition-opacity duration-1000 ease-in-out' ref={madelenRef}></Div100Vh>
+        <Div100Vh
+          className="madelen opacity-0 fixed left-0 bottom-0 bg-cover h-screen w-screen z-[-1] transition-opacity duration-1000 ease-in-out"
+          ref={madelenRef}
+        ></Div100Vh>
 
-        <Div100Vh className='background w-0 rounded-sm h-screen max-w-screen-2xl m-auto fixed shadow-2xl z-[-1] transition-width duration-1000 ease-in-out overflow-hidden'>
-          <Div100Vh className='inner flex flex-col lg:flex-row h-screen overflow-scroll' ref={innerRef}>
-            <aside className='aside left main header mx-8 pt-4 lg:pt-8 lg:pb-4 flex flex-col justify-between'>
+        <Div100Vh className="background w-0 rounded-sm h-screen max-w-screen-2xl m-auto fixed shadow-2xl z-[-1] transition-width duration-1000 ease-in-out overflow-hidden">
+          <Div100Vh
+            className="inner flex flex-col lg:flex-row h-screen overflow-scroll"
+            ref={innerRef}
+          >
+            <aside className="aside left main header mx-8 pt-4 lg:pt-8 lg:pb-4 flex flex-col justify-between">
               <header>
-                <h1 className='text-5xl font-light text-gray-800' ref={nameRef}>
+                <h1 className="text-5xl font-light text-gray-800" ref={nameRef}>
                   Jii Eu
                 </h1>
-                <h2 className='mb-12 text-md text-gray-500' ref={roleRef}>
+                <h2 className="mb-12 text-md text-gray-500" ref={roleRef}>
                   Front-End Engineer
                 </h2>
-                <div className='text-md mb-32 max-w-[35rem] text-gray-700'>
-                  I'm a front-end developer currently residing in Kentucky — passionate about crafting creative and simple digital experiences.
+                <div className="text-md mb-32 max-w-[35rem] text-gray-700">
+                  I'm a front-end developer currently residing in Kentucky —
+                  passionate about crafting creative and simple digital
+                  experiences.
                 </div>
               </header>
-              <nav className='nav text-sm border-b-[1px] border-[#ccc] lg:border-0 pb-8 text-gray-800'>
-                <ul className='nav-list mb-8'>
+              <nav className="nav text-sm border-b-[1px] border-[#ccc] lg:border-0 pb-8 text-gray-800">
+                <ul className="nav-list mb-8">
                   <li>
-                    <a className='nav-item' href="https://github.com/rolemadelen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a
+                      className="nav-item"
+                      href="https://github.com/rolemadelen"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
                   </li>
                   <li>
-                    <a className='nav-item' href="https://www.linkedin.com/in/jiieu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a
+                      className="nav-item"
+                      href="https://www.linkedin.com/in/jiieu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </a>
                   </li>
                   <li>
-                    <a className='nav-item' href="https://blog.jiieu.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+                    <a
+                      className="nav-item"
+                      href="https://blog.jiieu.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Blog
+                    </a>
                   </li>
                 </ul>
-                <div className='flex flex-col'>
-                  <a href="/#/cv" className='cv nav-item'>
+                <div className="flex flex-col">
+                  <a href="/#/cv" className="cv nav-item">
                     <span>૮</span> ･ ﻌ･<span>ა</span> CV
                   </a>
-                  <a className='nav-item' href="mailto:hello@jiieu.com">
+                  <a className="nav-item" href="mailto:hello@jiieu.com">
                     hello@jiieu.com
                   </a>
                 </div>
               </nav>
             </aside>
-            <div className='content lg:overflow-scroll h-auto pt-16 lg:py-8' onScroll={handleOnScroll} ref={scrollRef}>
+            <div
+              className="content lg:overflow-scroll h-auto pt-16 lg:py-8"
+              onScroll={handleOnScroll}
+              ref={scrollRef}
+            >
               <Intro />
               <Experience />
               <Skills />
@@ -132,9 +188,9 @@ const App: React.FC = () => {
             </div>
           </Div100Vh>
         </Div100Vh>
-      </div >
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
