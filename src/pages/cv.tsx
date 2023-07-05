@@ -140,7 +140,7 @@ const CV: React.FC = () => {
               <CompanyLoc>Minatomirai, Japan | Apr 2021 - Feb 2023</CompanyLoc>
               <WorkDetail>
                 - Built and deployed a brand new website called Aikomi Care, a
-                webiste designed to introduce users to Aikomi Care.
+                website designed to introduce users to Aikomi Care.
               </WorkDetail>
               <WorkDetail>
                 - Contributed in maintaining and updating the UI, ensuring its
