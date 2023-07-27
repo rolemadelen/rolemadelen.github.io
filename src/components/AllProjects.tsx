@@ -31,6 +31,28 @@ const AllProjects: React.FC = () => {
               <td className="text-sm">2023</td>
               <td className="text-sm">
                 <a
+                  href="https://asayake.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Asayake Taiko (Renewal) <span className="arrow"></span>
+                </a>
+              </td>
+              <td className="built-with hidden sm:block">
+                <ul className="flex">
+                  <li>Svelte</li>
+                  <li>TailwindCSS</li>
+                  <li>Responsive Design</li>
+                  <li className="!text-[#777] !border-dashed !border-[#777]">
+                    UI Design
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td className="text-sm">2023</td>
+              <td className="text-sm">
+                <a
                   href="https://github.com/rolemadelen/things-i-want"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -40,9 +62,7 @@ const AllProjects: React.FC = () => {
               </td>
               <td className="built-with hidden sm:block">
                 <ul className="flex">
-                  <li className="!text-[#777] !border-dashed !border-[#777]">
-                    Svelte
-                  </li>
+                  <li>Svelte</li>
                   <li className="!text-[#777] !border-dashed !border-[#777]">
                     Supabase
                   </li>
