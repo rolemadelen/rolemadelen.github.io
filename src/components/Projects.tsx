@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
             <span className="inline-block border-2 border-gray-400 w-16 rounded-md h-6"></span>
           </div>
           <div className="flex items-center text-sm mb-8 mx-2">
-            <span className="inline-block border-2 w-16 border-gray-400 border-2 border-dashed rounded-md h-6"></span>
+            <span className="inline-block border-2 w-16 border-gray-400 border-dashed rounded-md h-6"></span>
             <span className="inline-block mx-2"> — </span>
             <span className="inline-block">Familiar</span>
           </div>
@@ -22,9 +22,40 @@ const Projects: React.FC = () => {
 
         <div className="project">
           <Project
+            imgsrc={"/src/assets/asayaketaiko.gif"}
+            title={"Asayake Taiko Website Renewal"}
+            skillsHighlight={[
+              "Svelte",
+              "JavaScript",
+              "HTML",
+              "SCSS",
+              "Responsive UI",
+            ]}
+            skills={["Sendgrid", "Vercel"]}
+            link={"https://asayake.vercel.app/"}
+          >
+            <div className="text-sm">
+              <div className="mb-2">
+                Revamped Asayake Taiko website using Svelte. The new website
+                boasts a responsive design that seamlessly adapts to various
+                devices, including mobile phones, tablets, and PCs.
+              </div>
+              <div className="mb-2">
+                From conceptualization to implementation, I handled every aspect
+                of the project, taking charge of both design and development.
+              </div>
+            </div>
+          </Project>
+          <Project
             imgsrc={"/src/assets/aikomicare.gif"}
             title={"Aikomiケア Website"}
-            skillsHighlight={["JavaScript", "HTML", "SCSS", "Responsive UI"]}
+            skillsHighlight={[
+              "JavaScript",
+              "HTML",
+              "SCSS",
+              "TailwindCSS",
+              "Responsive UI",
+            ]}
             skills={["Vite", "PHP", "MySQL", "AWS Lightsail"]}
             link={"https://aikomicare.com/"}
           >

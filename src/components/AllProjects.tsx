@@ -21,36 +21,37 @@ const AllProjects: React.FC = () => {
         <table className="mx-auto">
           <thead>
             <tr>
-              <th>Year</th>
+              <th>Date</th>
               <th>Project</th>
               <th className="hidden sm:block">Built with</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2023.08</td>
               <td className="text-sm">
                 <a
                   href="https://asayake.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Asayake Taiko (Renewal) <span className="arrow"></span>
+                  Asayake Taiko Website Renewal <span className="arrow"></span>
                 </a>
               </td>
               <td className="built-with hidden sm:block">
                 <ul className="flex">
                   <li>Svelte</li>
                   <li>TailwindCSS</li>
+                  <li>SCSS</li>
                   <li>Responsive Design</li>
                   <li className="!text-[#777] !border-dashed !border-[#777]">
-                    UI Design
+                    Sendgrid
                   </li>
                 </ul>
               </td>
             </tr>
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2023.07</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/things-i-want"
@@ -70,7 +71,7 @@ const AllProjects: React.FC = () => {
               </td>
             </tr>
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2023.06</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/portfolio"
@@ -91,7 +92,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2023.06</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/minimalist-blog"
@@ -115,7 +116,29 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2023.05</td>
+              <td className="text-sm">
+                <a
+                  href="https://github.com/rolemadelen/blog-v2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Personal Blog v3 <span className="arrow"></span>
+                </a>
+              </td>
+              <td className="built-with hidden sm:block">
+                <ul className="flex">
+                  <li>Next.js</li>
+                  <li>Styled Component</li>
+                  <li>TypeScript</li>
+                  <li>TailwindCSS</li>
+                  <li>SCSS</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td className="text-sm">2023.03</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/artlog"
@@ -148,7 +171,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2023.02</td>
               <td className="text-sm">Aikomiケア Website</td>
               <td className="built-with hidden sm:block">
                 <ul className="flex">
@@ -167,7 +190,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2023</td>
+              <td className="text-sm">2022.07</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/ghost-vatar"
@@ -191,29 +214,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2022</td>
-              <td className="text-sm">
-                <a
-                  href="https://github.com/rolemadelen/blog-v2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Personal Blog v3 <span className="arrow"></span>
-                </a>
-              </td>
-              <td className="built-with hidden sm:block">
-                <ul className="flex">
-                  <li>Next.js</li>
-                  <li>Styled Component</li>
-                  <li>TypeScript</li>
-                  <li>TailwindCSS</li>
-                  <li>SCSS</li>
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="text-sm">2022</td>
+              <td className="text-sm">2022.03</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/euisblue/nextjs-blog-template"
@@ -238,7 +239,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2021</td>
+              <td className="text-sm">2022.03</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/euisblue/bluelog"
@@ -263,7 +264,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2021</td>
+              <td className="text-sm">2021.12</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/til-logger"
@@ -294,7 +295,32 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2020</td>
+              <td className="text-sm">2020.05</td>
+              <td className="text-sm">
+                <a
+                  href="https://github.com/rolemadelen/boj-solvedac"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Baekjoon Online Judge CLI{" "}
+                  <span className="font-light">(8.9k+ downloads)</span>{" "}
+                  <span className="arrow"></span>
+                </a>
+              </td>
+              <td className="built-with hidden sm:block">
+                <ul className="flex">
+                  <li className="!text-[#777] !border-dashed !border-[#777]">
+                    Ruby
+                  </li>
+                  <li className="!text-[#777] !border-dashed !border-[#777]">
+                    Web Scraping
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td className="text-sm">2019.09</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/euisblue/euisblue.github.io"
@@ -320,32 +346,7 @@ const AllProjects: React.FC = () => {
             </tr>
 
             <tr>
-              <td className="text-sm">2020</td>
-              <td className="text-sm">
-                <a
-                  href="https://github.com/rolemadelen/boj-solvedac"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Baekjoon Online Judge CLI{" "}
-                  <span className="font-light">(8k+ downloads)</span>{" "}
-                  <span className="arrow"></span>
-                </a>
-              </td>
-              <td className="built-with hidden sm:block">
-                <ul className="flex">
-                  <li className="!text-[#777] !border-dashed !border-[#777]">
-                    Ruby
-                  </li>
-                  <li className="!text-[#777] !border-dashed !border-[#777]">
-                    Web Scraping
-                  </li>
-                </ul>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="text-sm">2017</td>
+              <td className="text-sm">2016.04</td>
               <td className="text-sm">
                 <a
                   href="https://github.com/rolemadelen/chess"
