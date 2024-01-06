@@ -1,5 +1,5 @@
-import React from "react";
-import "./cv.css";
+import React from 'react';
+import './cv.css';
 import {
   Header,
   Heading,
@@ -24,30 +24,30 @@ import {
   Company,
   CompanyLoc,
   WorkDetail,
-} from "./custom-tw-components";
+} from './custom-tw-components';
 
 const CV: React.FC = () => {
   return (
     <CVWrapper>
       <Header>
-        <div className="flex-auto w-36">
-          <Name>Jii Eu</Name>
+        <div className='flex-auto w-36'>
+          <Name>Jii Yoo</Name>
           <Role>Front-End Engineer</Role>
         </div>
         <Contact>
           <ContactLink>
-            <a href="https://www.jiieu.com">jiieu.com</a>
+            <a href='https://www.imjiwon.com'>imjiwon.com</a>
           </ContactLink>
-          <ContactLink className="mb-2">
-            <a href="https://github.com/rolemadelen">github.com/rolemadelen</a>
+          <ContactLink className='mb-2'>
+            <a href='https://github.com/rolemadelen'>github.com/rolemadelen</a>
           </ContactLink>
           <div>
-            <a href="mailto:hello@jiieu.com">hello@jiieu.com</a>
+            <a href='mailto:rolemadelen@pm.me'>rolemadelen@pm.me</a>
           </div>
           <div>+1 606.389.2964</div>
         </Contact>
       </Header>
-      <Content className="main-content">
+      <Content className='main-content'>
         <ContentLeft>
           <Education>
             <Heading>Education</Heading>
@@ -85,45 +85,45 @@ const CV: React.FC = () => {
           </Languages>
 
           <Skills>
-            <Heading className="skills">Hard Skills</Heading>
-            <h3 className="underline">Advanced</h3>
-            <UList className="predominant">
+            <Heading className='skills'>Hard Skills</Heading>
+            <h3 className='underline'>Advanced</h3>
+            <UList className='predominant'>
               <li>HTML / SCSS / TailwindCSS / </li>
               <li>JavaScript / TypeScript / </li>
               <li>React / Responsive UI / </li>
               <li>Styled Components / Git / </li>
               <li>C / C++</li>
             </UList>
-            <h3 className="underline">Intermediate</h3>
-            <UList className="predominant">
+            <h3 className='underline'>Intermediate</h3>
+            <UList className='predominant'>
               <li>Svelte / Next.js / Vue / Node /</li>
               <li>Express / AWS Lightsail / REST API / </li>
               <li>Supabase / Linux / Cron Jobs / </li>
               <li>MySQL / MongoDB</li>
             </UList>
-            <h3 className="underline">Have Done Projects</h3>
-            <UList className="predominant">
+            <h3 className='underline'>Have Done Projects</h3>
+            <UList className='predominant'>
               <li>Java / C# / Python</li>
               <li>Ruby / Rails / PHP /</li>
               <li>jQuery</li>
             </UList>
           </Skills>
           <Skills>
-            <Heading className="skills">Soft Skills</Heading>
-            <UList className="predominant">
-              <div className="max-w-[15rem] mb-2">
+            <Heading className='skills'>Soft Skills</Heading>
+            <UList className='predominant'>
+              <div className='max-w-[15rem] mb-2'>
                 My experiences in both the education and technical fields have
                 shaped me into a well-rounded individual. Through teaching, I
                 have developed strong communication, patience, and
                 organizational skills, enabling me to effectively connect with
                 others and manage tasks efficiently.
               </div>
-              <div className="max-w-[15rem] mb-2">
+              <div className='max-w-[15rem] mb-2'>
                 Additionally, my hands-on experience as a software engineer has
                 expanded my logical thinking and problem-solving abilities,
                 allowing me to approach challenges with a strategic mindset.
               </div>
-              <div className="max-w-[15rem]">
+              <div className='max-w-[15rem]'>
                 These combined experiences have provided me with a diverse skill
                 set that I bring to every endeavor, fostering collaboration and
                 adaptability in various settings.
@@ -133,7 +133,7 @@ const CV: React.FC = () => {
         </ContentLeft>
 
         <ContentRight>
-          <Experience className="experience">
+          <Experience className='experience'>
             <Heading>Relevant Experience</Heading>
             <UList>
               <Company>Aikomi Inc. | Frontend Engineer</Company>
@@ -186,7 +186,7 @@ const CV: React.FC = () => {
             </UList>
           </Experience>
 
-          <Experience className="experience">
+          <Experience className='experience'>
             <Heading>Other Experience</Heading>
             <UList>
               <Company>BorderLink, Inc. | Foreign Language Teacher </Company>
