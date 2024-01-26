@@ -36,7 +36,7 @@ const CV: React.FC = () => {
         </div>
         <Contact>
           <ContactLink>
-            <a href='https://www.imjiwon.com'>imjiwon.com</a>
+            <a href='https://www.jiiyoo.me'>jiiyoo.me</a>
           </ContactLink>
           <ContactLink className='mb-2'>
             <a href='https://github.com/rolemadelen'>github.com/rolemadelen</a>

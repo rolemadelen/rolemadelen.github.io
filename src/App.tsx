@@ -157,7 +157,7 @@ const App: React.FC = () => {
                   <li>
                     <a
                       className='nav-item'
-                      href='https://blog.imjiwon.com/'
+                      href='https://blog.jiiyoo.me/'
                       target='_blank'
                       rel='noopener noreferrer'>
                       Blog

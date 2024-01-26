@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
           </Project>
           <Project
             imgsrc={'/src/assets/portfolio.gif'}
-            title={'www.imjiwon.com'}
+            title={'www.jiiyoo.me'}
             skillsHighlight={[
               'React.js',
               'React Hooks',
@@ -114,7 +114,7 @@ const Projects: React.FC = () => {
               'SCSS',
             ]}
             skills={[]}
-            link={'https://www.imjiwon.com'}>
+            link={'https://www.jiiyoo.me'}>
             <div className='text-sm'>A portfolio website built with React.</div>
           </Project>
         </div>
